@@ -17,6 +17,9 @@
     <!-- -------------------------------------- font -->
 
 
+
+    <!-- JQuery -->
+     <script src="https://code.jquery.com/jquery-4.0.0.min.js" defer></script>
     <!-- script -->
     <script defer type="module" src="./js/main.js"></script>
 </head>
@@ -24,12 +27,14 @@
 <body class="m-0 p-0">
     <!-- Hero -->
     <section id="hero" class="h-screen max-h-[1100px] bg-gradient-to-t from-p-100 to-white overflow-y-clip">
+
         <div class="container relative flex items-center justify-center w-full h-full xl:justify-start">
+
             <!-- Ảnh -->
-            <div class="absolute bottom-0 right-0 z-0 overflow-hidden md:-bottom-40 xl:top-1/2 xl:-translate-y-1/2">
+            <div class="absolute bottom-0 right-0 overflow-hidden z-0 md:-bottom-40 xl:top-1/2 xl:-translate-y-1/2">
                 <img src="./assets/hero_img.png" alt="hero_img" class="h-full">
             </div>
-
+        
             <!-- Nội dung -->
             <div class="flex flex-col items-center justify-center gap-4 z-10 md:gap-9 xl:items-start">
                 <div>
@@ -53,8 +58,23 @@
 
 
      <!-- Partner Logos -->
+    <section id="partner-logos">
+        <div class="container">
+            <div class="mt-10">
+                <h2 class="sub_heading">Có mặt tại</h2>
+                <h1 class="main_heading">Những Nhà Phân Phối <span class="text-gradient">Uy Tín</span></h1>
+            </div>
+            <div class="flex mt-9 md:mt-16 [-webkit-mask-image:linear-gradient(to_right,transparent,black,transparent)]">
+                <div id="partner-logo-list" class="flex flex-none logos-wrapper gap-14 pl-14">
+                    <!-- <img src="./assets/partner-logos/costco.png" alt=""> -->
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="h-screen">
 
+    </section>
 </body>
 
 </html>

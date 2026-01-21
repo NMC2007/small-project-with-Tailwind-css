@@ -4,7 +4,7 @@
 /** Theme **/
 @theme {
   /* Screens */
-  --breakpoint-sm: 30rem;
+  --breakpoint-sm: 40rem;
   /*480px*/
   --breakpoint-md: 48rem;
   /*768px*/
@@ -25,8 +25,8 @@
   padding-inline: 1rem;
   padding-block: 2rem;
   width: 100%;
-  overscroll-behavior-x: clip;
-  max-whidth: 1537px;
+  overflow-x: clip;
+  max-width: 1537px;
 
   @media (min-width: theme('screens.md')) {
     padding-inline: 4.5rem;
@@ -62,7 +62,21 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
+
+  /* các tiêu đề chính và phụ */
+  .sub_heading {
+    @apply text-xs font-medium uppercase font-inter text-p-900
+  }
+  .main_heading {
+    @apply mt-2 text-2xl tracking-wide capitalize lg:text-3xl font-lobster
+  }
+
 }
 
 @layer utilities {
+    /* Partner Logos */
+  .logos-ticker-image {
+    @apply w-auto h-6 lg:h-9
+  }
 }
