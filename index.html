@@ -13,13 +13,15 @@
     <!-- font -------------------------------------- -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <!-- -------------------------------------- font -->
 
 
 
     <!-- JQuery -->
-     <script src="https://code.jquery.com/jquery-4.0.0.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" defer></script>
     <!-- script -->
     <script defer type="module" src="./js/main.js"></script>
 </head>
@@ -34,43 +36,161 @@
             <div class="absolute bottom-0 right-0 overflow-hidden z-0 md:-bottom-40 xl:top-1/2 xl:-translate-y-1/2">
                 <img src="./assets/hero_img.png" alt="hero_img" class="h-full">
             </div>
-        
+
             <!-- Nội dung -->
             <div class="flex flex-col items-center justify-center gap-4 z-10 md:gap-9 xl:items-start">
                 <div>
-                    <h2 class="mb-2 text-xs font-semibold leading-none tracking-wider text-center uppercase font-inter md:text-sm xl:text-start">
-                        HƠN <span class="text-gradient md:text-sm">MỘT TRĂM</span>  ĐƠN VỊ TRÀ
+                    <h2
+                        class="mb-2 text-xs font-semibold leading-none tracking-wider text-center uppercase font-inter md:text-sm xl:text-start">
+                        HƠN <span class="text-gradient md:text-sm">MỘT TRĂM</span> ĐƠN VỊ TRÀ
                     </h2>
-                    <h1 class="text-5xl leading-none tracking-wide text-center capitalize font-lobster text-p-950 md:text-6px lg:text-7px">
+                    <h1
+                        class="text-5xl leading-none tracking-wide text-center capitalize font-lobster text-p-950 md:text-6px lg:text-7px">
                         Trà Đặc Biệt Chế Tác
                     </h1>
                 </div>
-                <p class="max-w-xl px-4 text-center text-n-700 md:px-0 xl:text-start">Sứ mệnh của chúng tôi là mang đến cho bạn sự yên bình và kết nối thông qua các hương vị trà được chọn
+                <p class="max-w-xl px-4 text-center text-n-700 md:px-0 xl:text-start">Sứ mệnh của chúng tôi là mang đến
+                    cho bạn sự yên bình và kết nối thông qua các hương vị trà được chọn
                     lọc
                     cẩn thận và được tạo ra để nâng cao trải nghiệm hàng ngày và sức khoẻ toàn diện cho bạn.</p>
 
                 <button>
-                    <a class="btn" href="#products">Tìm Hiểu Sản Phẩm <img src="./assets/right-arrow.svg" alt="right-arrow"></a>
+                    <a class="btn" href="#products">Tìm Hiểu Sản Phẩm <img src="./assets/right-arrow.svg"
+                            alt="right-arrow"></a>
                 </button>
             </div>
         </div>
     </section>
 
 
-     <!-- Partner Logos -->
+    <!-- Partner Logos -->
     <section id="partner-logos">
         <div class="container">
             <div class="mt-10">
                 <h2 class="sub_heading">Có mặt tại</h2>
                 <h1 class="main_heading">Những Nhà Phân Phối <span class="text-gradient">Uy Tín</span></h1>
             </div>
-            <div class="flex mt-9 md:mt-16 [-webkit-mask-image:linear-gradient(to_right,transparent,black,transparent)]">
+            <div
+                class="flex mt-9 md:mt-16 [-webkit-mask-image:linear-gradient(to_right,transparent,black,transparent)]">
                 <div id="partner-logo-list" class="flex flex-none logos-wrapper gap-14 pl-14">
                     <!-- <img src="./assets/partner-logos/costco.png" alt=""> -->
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Product -->
+    <section id="products">
+        <div class="container">
+            <div class="flex flex-col gap-9">
+                <!-- heding -->
+                <div class="mt-10">
+                    <h2 class="sub_heading">Tìm hiểu</h2>
+                    <h1 class="main_heading">Sản Phẩm <span class="text-gradient">Trà Ngon</span></h1>
+                </div>
+
+                <!-- tab -->
+                <div id="products-tabs">
+                    <ul>
+                        <li><a href="#matcha" class="tab-link">Tà Matcha</a></li>
+                        <li>|</li>
+                        <li><a href="#whiteTea" class="tab-link">Tà Trắng</a></li>
+                        <li>|</li>
+                        <li><a href="#olongTea" class="tab-link">Tà Olong</a></li>
+                        <li>|</li>
+                        <li><a href="#blackTea" class="tab-link">Tà Đen</a></li>
+                    </ul>
+                    <div id="matcha">
+                        <div class="container">
+                            <img src="./assets/product_1.jpg" alt="matcha" class="productImg">
+                            <div>
+                                <h3>Matcha Magic</h3>
+                                <h4>Khám phá những lợi ích tiềm năng của "vàng xanh" từ Nhật Bản</h4>
+                                <p>
+                                    Sẵn sàng nâng cao sức khoẻ của bạn? Hãy làm quen với matcha, loại bột màu xanh lá
+                                    cây rực rỡ đang làm khuynh đảo thế giới chăm sóc sức khoẻ. Chứa đầy chất chống oxy
+                                    hoá và chất dinh dưỡng, matcha cung cấp nguồn năng lượng mạnh mẽ mà không gây bồn
+                                    chồn, nhờ sự kết hợp độc đáo giữa caffeine và L-theanine.
+                                    <br>
+                                    Loại trà này không chỉ tăng cường sự tập trung và trao đổi chất mà còn thêm hương vị
+                                    thơm ngon cho sinh tố, đồ nướng và cà phê latte. Hãy đắm mình vào thế giới matcha và
+                                    trải nghiệm cách siêu thực phẩm cổ xưa này có thể thêm sinh lực cho cơ thể và trí óc
+                                    của bạn!
+                                </p>
+                                <button><a href="" class="btn">Xem Sản Phẩm Matcha <img src="./assets/right-arrow.svg" alt="right-arrow"></a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="whiteTea">
+                        <div class="container">
+                            <img src="./assets/product_2.jpg" alt="whiteTea" class="productImg">
+                            <div>
+                                <h3>Matcha Magic</h3>
+                                <h4>Khám phá những lợi ích tiềm năng của "vàng xanh" từ Nhật Bản</h4>
+                                <p>
+                                    Sẵn sàng nâng cao sức khoẻ của bạn? Hãy làm quen với matcha, loại bột màu xanh lá
+                                    cây rực rỡ đang làm khuynh đảo thế giới chăm sóc sức khoẻ. Chứa đầy chất chống oxy
+                                    hoá và chất dinh dưỡng, matcha cung cấp nguồn năng lượng mạnh mẽ mà không gây bồn
+                                    chồn, nhờ sự kết hợp độc đáo giữa caffeine và L-theanine.
+                                    <br>
+                                    Loại trà này không chỉ tăng cường sự tập trung và trao đổi chất mà còn thêm hương vị
+                                    thơm ngon cho sinh tố, đồ nướng và cà phê latte. Hãy đắm mình vào thế giới matcha và
+                                    trải nghiệm cách siêu thực phẩm cổ xưa này có thể thêm sinh lực cho cơ thể và trí óc
+                                    của bạn!
+                                </p>
+                                <button><a href="" class="btn">Xem Sản Phẩm Matcha <img src="./assets/right-arrow.svg" alt="right-arrow"></a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="olongTea">
+                        <div class="container">
+                            <img src="./assets/product_3.jpg" alt="olongTea" class="productImg">
+                            <div>
+                                <h3>Matcha Magic</h3>
+                                <h4>Khám phá những lợi ích tiềm năng của "vàng xanh" từ Nhật Bản</h4>
+                                <p>
+                                    Sẵn sàng nâng cao sức khoẻ của bạn? Hãy làm quen với matcha, loại bột màu xanh lá
+                                    cây rực rỡ đang làm khuynh đảo thế giới chăm sóc sức khoẻ. Chứa đầy chất chống oxy
+                                    hoá và chất dinh dưỡng, matcha cung cấp nguồn năng lượng mạnh mẽ mà không gây bồn
+                                    chồn, nhờ sự kết hợp độc đáo giữa caffeine và L-theanine.
+                                    <br>
+                                    Loại trà này không chỉ tăng cường sự tập trung và trao đổi chất mà còn thêm hương vị
+                                    thơm ngon cho sinh tố, đồ nướng và cà phê latte. Hãy đắm mình vào thế giới matcha và
+                                    trải nghiệm cách siêu thực phẩm cổ xưa này có thể thêm sinh lực cho cơ thể và trí óc
+                                    của bạn!
+                                </p>
+                                <button><a href="" class="btn">Xem Sản Phẩm Matcha <img src="./assets/right-arrow.svg" alt="right-arrow"></a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="blackTea">
+                        <div class="container">
+                            <img src="./assets/product_4.png" alt="blackTea" class="productImg">
+                            <div>
+                                <h3>Matcha Magic</h3>
+                                <h4>Khám phá những lợi ích tiềm năng của "vàng xanh" từ Nhật Bản</h4>
+                                <p>
+                                    Sẵn sàng nâng cao sức khoẻ của bạn? Hãy làm quen với matcha, loại bột màu xanh lá
+                                    cây rực rỡ đang làm khuynh đảo thế giới chăm sóc sức khoẻ. Chứa đầy chất chống oxy
+                                    hoá và chất dinh dưỡng, matcha cung cấp nguồn năng lượng mạnh mẽ mà không gây bồn
+                                    chồn, nhờ sự kết hợp độc đáo giữa caffeine và L-theanine.
+                                    <br>
+                                    Loại trà này không chỉ tăng cường sự tập trung và trao đổi chất mà còn thêm hương vị
+                                    thơm ngon cho sinh tố, đồ nướng và cà phê latte. Hãy đắm mình vào thế giới matcha và
+                                    trải nghiệm cách siêu thực phẩm cổ xưa này có thể thêm sinh lực cho cơ thể và trí óc
+                                    của bạn!
+                                </p>
+                                <button><a href="" class="btn">Xem Sản Phẩm Matcha <img src="./assets/right-arrow.svg" alt="right-arrow"></a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
 
     <section class="h-screen">
 
