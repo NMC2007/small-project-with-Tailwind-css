@@ -11,3 +11,9 @@ $(function () {
         container.appendChild(img);
     })
 })
+
+$(function () {
+    $('#products-tabs').responsiveTabs({
+        startCollapsed: 'accordion'
+    });
+})
