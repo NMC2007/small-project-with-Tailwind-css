@@ -29,6 +29,23 @@
 </head>
 
 <body class="m-0 p-0">
+    <!-- nav -->
+     <header class="relative z-50">
+        <div class="flex items-center justify-center navbar">
+            <div class="max-w-[1536px] w-full px-4 py-4 md:py-10 md:px-[72px] flex items-center justify-center">
+                <a href="./" class="flex items-center justify-center flex-none">
+                    <img src="./assets/logo.png" alt="logo" class="w-16 h-16">
+                    <p class="text-lg capitalize font-lobster text-p-900">Tea Station</p>
+                </a>
+                <nav class="items-center justify-end hidden w-full gap-4 lg:flex lg:gap-8">
+                    <a href="./product.html" class="navLink">Sản Phẩm</a>
+                    <a href="./#story" class="navLink">Giới Thiệu</a>
+                    <a href="./#contact" class="navLink">Liên Hệ</a>
+                </nav>
+            </div>
+        </div>
+     </header>
+
     <!-- Hero -->
     <section id="hero" class="h-screen max-h-[1100px] bg-gradient-to-t from-p-100 to-white overflow-y-clip">
 
@@ -36,7 +53,7 @@
 
             <!-- Ảnh -->
             <div class="absolute bottom-0 right-0 overflow-hidden z-0 md:-bottom-40 xl:top-1/2 xl:-translate-y-1/2">
-                <img src="./assets/hero_img.png" alt="hero_img" class="h-full">
+                <img src="./assets/hero_img.png" alt="hero_img" class="h-full 2xl:[-webkit-mask-image:linear-gradient(to_left,transparent,black_10%)]">
             </div>
 
             <!-- Nội dung -->
@@ -93,17 +110,17 @@
 
                 <!-- tab -->
                 <div id="products-tabs">
-                    <ul>
-                        <li><a href="#matcha" class="tab-link">Tà Matcha</a></li>
+                    <ul class="flex bg-p-50 px-4 md:px-10 xl:px-[200px] py-4 md:py-6 gap-4 md:gap-8 justify-center mb-9 text-center">
+                        <li><a href="#matcha" class="tab-link"><span>Trà</span> Matcha</a></li>
                         <li>|</li>
-                        <li><a href="#whiteTea" class="tab-link">Tà Trắng</a></li>
+                        <li><a href="#whiteTea" class="tab-link"><span>Trà</span> Trắng</a></li>
                         <li>|</li>
-                        <li><a href="#olongTea" class="tab-link">Tà Olong</a></li>
+                        <li><a href="#olongTea" class="tab-link"><span>Trà</span> Olong</a></li>
                         <li>|</li>
-                        <li><a href="#blackTea" class="tab-link">Tà Đen</a></li>
+                        <li><a href="#blackTea" class="tab-link"><span>Trà</span> Đen</a></li>
                     </ul>
                     <div id="matcha">
-                        <div class="container">
+                        <div class="tabContainer">
                             <img src="./assets/product_1.jpg" alt="matcha" class="productImg">
                             <div>
                                 <h3>Matcha Magic</h3>
@@ -125,7 +142,7 @@
                         </div>
                     </div>
                     <div id="whiteTea">
-                        <div class="container">
+                        <div class="tabContainer">
                             <img src="./assets/product_2.jpg" alt="whiteTea" class="productImg">
                             <div>
                                 <h3>Tinh chất tinh tế từ trà trắng</h3>
@@ -145,7 +162,7 @@
                         </div>
                     </div>
                     <div id="olongTea">
-                        <div class="container">
+                        <div class="tabContainer">
                             <img src="./assets/product_3.jpg" alt="olongTea" class="productImg">
                             <div>
                                 <h3>Cuộc cách mạng trà ô long</h3>
@@ -167,7 +184,7 @@
                         </div>
                     </div>
                     <div id="blackTea">
-                        <div class="container">
+                        <div class="tabContainer">
                             <img src="./assets/product_4.png" alt="blackTea" class="productImg">
                             <div>
                                 <h3>Đánh thức các giác quan của bạn cùng trà đen</h3>

@@ -13,7 +13,16 @@ $(function () {
 })
 
 $(function () {
+
+    $("li:first").addClass("activeTab");
+
+    $("li").on("click", function () {
+        $("li").removeClass("activeTab");
+        $("div[id='products-tabs'] ul .r-tabs-state-active").addClass("activeTab")
+    })
+
+
     $('#products-tabs').responsiveTabs({
-        startCollapsed: 'accordion'
+        animation: "slide"
     });
 })
