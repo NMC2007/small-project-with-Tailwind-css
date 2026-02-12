@@ -8,8 +8,12 @@
     <link rel="icon" type="image/png" href="assets/logo.png">
 
     <!-- css -->
-     <link rel="stylesheet" href="./css/showHideNav.css">
+    <link rel="stylesheet" href="./css/showHideNav.css">
     <link type="text/css" rel="stylesheet" href="./css/responsive-tabs.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="./css/animated-counter-prograssbar.css">
     <link href="./dist/output.css" rel="stylesheet">
 
     <!-- font -------------------------------------- -->
@@ -23,16 +27,18 @@
 
 
     <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-4.0.0.min.js" defer></script>
+    <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <!-- script -->
-     <script defer src="./js/jquery.hidescroll.js"></script>
+    <script defer src="./js/jquery.hidescroll.js"></script>
     <script defer src="./js/jquery.responsiveTabs.js"></script>
+    <script defer type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+    <script defer src="./js/animated-counter-prograssbar.js"></script>
     <script defer type="module" src="./js/main.js"></script>
 </head>
 
 <body class="m-0 p-0">
     <!-- nav -->
-     <header class="relative z-50">
+    <header class="relative z-50">
         <div class="flex items-center justify-center navbar">
             <div class="max-w-[1536px] w-full px-4 py-4 md:py-10 md:px-[72px] flex items-center justify-between">
                 <!-- logo -->
@@ -59,7 +65,7 @@
                 </div>
             </div>
         </div>
-     </header>
+    </header>
 
     <!-- Hero -->
     <section id="hero" class="h-screen max-h-[1100px] bg-gradient-to-t from-p-100 to-white overflow-y-clip">
@@ -68,7 +74,8 @@
 
             <!-- Ảnh -->
             <div class="absolute bottom-0 right-0 overflow-hidden z-0 md:-bottom-40 xl:top-1/2 xl:-translate-y-1/2">
-                <img src="./assets/hero_img.png" alt="hero_img" class="h-full 2xl:[-webkit-mask-image:linear-gradient(to_left,transparent,black_10%)]">
+                <img src="./assets/hero_img.png" alt="hero_img"
+                    class="h-full 2xl:[-webkit-mask-image:linear-gradient(to_left,transparent,black_10%)]">
             </div>
 
             <!-- Nội dung -->
@@ -125,7 +132,8 @@
 
                 <!-- tab -->
                 <div id="products-tabs">
-                    <ul class="flex bg-p-50 px-4 md:px-10 xl:px-[200px] py-4 md:py-6 gap-4 md:gap-8 justify-center mb-9 text-center">
+                    <ul
+                        class="flex bg-p-50 px-4 md:px-10 xl:px-[200px] py-4 md:py-6 gap-4 md:gap-8 justify-center mb-9 text-center">
                         <li><a href="#matcha" class="tab-link"><span>Trà</span> Matcha</a></li>
                         <li>|</li>
                         <li><a href="#whiteTea" class="tab-link"><span>Trà</span> Trắng</a></li>
@@ -171,8 +179,8 @@
                                     vẻ đẹp thanh bình của trà trắng và nâng tầm nghi thức uống trà của bạn lên một tầm
                                     cao mới.
                                 </p>
-                                <button><a href="" class="btn">Xem Sản Phẩm Trà Trắng <img src="./assets/right-arrow.svg"
-                                            alt="right-arrow"></a></button>
+                                <button><a href="" class="btn">Xem Sản Phẩm Trà Trắng <img
+                                            src="./assets/right-arrow.svg" alt="right-arrow"></a></button>
                             </div>
                         </div>
                     </div>
@@ -193,8 +201,8 @@
                                     khám phá cách thức pha chế đơn giản này có thể biến đổi sức khỏe của bạn từng ngụm
                                     một!
                                 </p>
-                                <button><a href="" class="btn">Xem Sản Phẩm Trà Ô Long <img src="./assets/right-arrow.svg"
-                                            alt="right-arrow"></a></button>
+                                <button><a href="" class="btn">Xem Sản Phẩm Trà Ô Long <img
+                                            src="./assets/right-arrow.svg" alt="right-arrow"></a></button>
                             </div>
                         </div>
                     </div>
@@ -223,7 +231,287 @@
     </section>
 
 
+    <!-- Slogan -->
+    <section id="slogan" class="mt-20 overflow-clip">
+        <div class="relative min-w-full h-[30vh] max-h-[280px] overflow-hidden flex justify-center items-center">
+            <video poster="./assets/video.mp4" autoplay loop muted
+                class="absolute inset-0 min-w-full min-h-full -z-10 md:top-[-20%] md:left-[-50%] md:translate-x-1/2">
+                <source src="./assets/video.mp4" type="video/mp4">
+            </video>
+            <p class="text-base tracking-wide text-center text-white x-4 md:text-2xl text-shadow-[2px_2px_8px_#000000]">
+                Chỉ những lá trà ngon nhất mới được đưa vào sản phẩm của chúng tôi,<br class="hidden lg:block"> đảm bảo
+                mỗi ngụm trà đều mang hương vị tinh khiết và tuyệt hảo
+            </p>
+        </div>
+    </section>
 
+
+    <!-- Features -->
+    <section id="features">
+        <div class="container relative mt-20 text-center">
+
+            <div class="flex flex-col items-center justify-center w-full gap-0 lg:gap-10 lg:flex-row">
+                <div class="feature-card group bg-[url(/assets/benefit_1.jpg)]">
+                    <div class="feature-filter"></div>
+                    <h3>
+                        Nguồn cung cao cấp
+                    </h3>
+                    <p>
+                        Chúng tôi tự hào sản xuất trà ngay tại Hoa Kỳ, sử dụng nguyên liệu chất lượng cao từ các trang
+                        trại địa phương.
+                    </p>
+                </div>
+
+                <div class="order-first bg-p-50 feature-card lg:order-none lg:bg-transparent">
+                    <div>
+                        <h2 class="sub_heading">
+                            Why Us?
+                        </h2>
+                        <h1 class="leading-loose text-center main_heading">
+                            Sự <span class="text-gradient">Độc Đáo</span> Từ <br> Tea Station
+                        </h1>
+                    </div>
+                </div>
+
+                <div class="feature-card group bg-[url(/assets/benefit_2.jpg)]">
+                    <div class="feature-filter"></div>
+                    <h3>
+                        Hương vị và pha chế độc đáo
+                    </h3>
+                    <p>
+                        Sản phẩm độc quyền của chúng tôi gồm ác loại trà được với hương vị độc đáo, được chế tác để làm
+                        hài lòng mội khẩu vị.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center justify-center w-full lg:-mt-20 lg:gap-10 lg:flex-row">
+                <div class="feature-card group bg-[url(/assets/benefit_3.jpg)]">
+                    <div class="feature-filter"></div>
+                    <h3>
+                        Tập trung vào sức khoẻ
+                    </h3>
+                    <p>
+                        hãy thưởng thức các loại trà tôý cho sức khoẻ của chúng tôi, được pha chế cẩn thận để hỗ trợ trí
+                        óc, cơ thể và tâm trí của bạn.
+                    </p>
+                </div>
+
+                <div class="feature-card group bg-[url(/assets/benefit_4.jpg)]">
+                    <div class="feature-filter"></div>
+                    <h3>
+                        Trải nghiệm cá nhân hoá
+                    </h3>
+                    <p>
+                        Trải nghiệm dịch vụ được cá nhân hoá với mọi đơn hàng phù hợp với sở thích và nhu cầu riêng cảu
+                        bạn.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Best Sellers -->
+    <section id="best-sellers">
+        <div class="container my-20">
+            <div class="flex flex-col items-start md:items-center lg:items-start">
+                <h2 class="sub_heading">
+                    Khách hàng yêu thích
+                </h2>
+                <h1 class="main_heading">
+                    Những Sản Phẩm <span class="text-gradient">Bán Chạy Nhất</span>
+                </h1>
+                <p class="max-w-lg pr-16 mt-2 text-xs text-start md:text-center lg:flex-start text-n-500">
+                    Khám phá nhưgx sản phẩm bán chạy nhất của chúng tôi, nơi hất lượng kết hợp hương vị trong một tách
+                    trà. Hãy tham gia cùng hàng ngàn khách hàng hài lòng đã biến những hỗn hợp này thành sở thích của họ
+                    và nâng tầm thời gian uống trà của bạn ngay hôm nay!
+                </p>
+            </div>
+
+            <!-- slide -->
+            <div class="lg:px-4 md:px-2 mt-9 slider">
+
+                <!-- sp1 -->
+                <div class="!flex flex-col lg:flex-row items-center justify-between">
+                    <div class="flex-1 best-product--left">
+                        <!-- info -->
+                        <div class="best-product-info">
+                            <h3>Peppermint Velvet</h3>
+                            <p>
+                                Mỗi ngụm mang đến sự pha trộn hài hoà giữa hương vị đậm đà và hương thơm sảng khoái,
+                                khiến đây trở thành lựa chọn lý tưởng cho cả nghi lễ buổi sáng và giờ giải lao buổi
+                                chiều. Trải nghiệm sự ấm áp dễ chịu và những phẩm chất tràn đầy năng lượng đã khiến trà
+                                đen trả thành thức uống cổ điển được yêu thích trong nhiều thế kỷ.
+                            </p>
+                        </div>
+
+                        <!-- thanh tiến trình -->
+                        <div class="benefit-bars">
+                            <!-- top -->
+                            <div>
+                                <div class="flex-1 progressbar-item">
+                                    <h4 class="progressbar-title">Tăng cường năng lượng và tập trung</h4>
+                                </div>
+                                <div class="flex-1 progressbar-item">
+                                    <h4 class="progressbar-title">Giàu chất chống oxy hoá</h4>
+                                </div>
+                            </div>
+
+                            <!-- bottom -->
+                            <div>
+                                <div class="flex-1 progressbar-item">
+                                    <h4 class="progressbar-title">Tăng cường trao đổi chất</h4>
+                                </div>
+                                <div class="flex-1 progressbar-item">
+                                    <h4 class="progressbar-title">Thúc đẩy sự bình tĩnh và thư giãn</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="./assets/products/matcha1.jpg" alt="best-sellers-product">
+                    </div>
+                </div>
+
+                <!-- sp2 -->
+                <div class="!flex flex-col lg:flex-row items-center justify-between">
+                    <div class="flex-1 best-product--left">
+                        <!-- info -->
+                        <div class="best-product-info">
+                            <h3>Peppermint Velvet</h3>
+                            <p>
+                                Mỗi ngụm mang đến sự pha trộn hài hoà giữa hương vị đậm đà và hương thơm sảng khoái,
+                                khiến đây trở thành lựa chọn lý tưởng cho cả nghi lễ buổi sáng và giờ giải lao buổi
+                                chiều. Trải nghiệm sự ấm áp dễ chịu và những phẩm chất tràn đầy năng lượng đã khiến trà
+                                đen trả thành thức uống cổ điển được yêu thích trong nhiều thế kỷ.
+                            </p>
+                        </div>
+
+                        <!-- thanh tiến trình -->
+                        <div class="benefit-bars">
+                            <!-- top -->
+                            <div>
+                                <div class="flex-1 progressbar-item">
+                                    <h4 class="progressbar-title">Tăng cường năng lượng và tập trung</h4>
+                                </div>
+                                <div class="flex-1 progressbar-item">
+                                    <h4 class="progressbar-title">Giàu chất chống oxy hoá</h4>
+                                </div>
+                            </div>
+
+                            <!-- bottom -->
+                            <div>
+                                <div class="flex-1 progressbar-item">
+                                    <h4 class="progressbar-title">Tăng cường trao đổi chất</h4>
+                                </div>
+                                <div class="flex-1 progressbar-item">
+                                    <h4 class="progressbar-title">Thúc đẩy sự bình tĩnh và thư giãn</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="./assets/products/blacktea1.jpg" alt="best-sellers-product">
+                    </div>
+                </div>
+
+                <!-- sp3 -->
+                <div class="!flex flex-col lg:flex-row items-center justify-between">
+                    <div class="flex-1 best-product--left">
+                        <!-- info -->
+                        <div class="best-product-info">
+                            <h3>Peppermint Velvet</h3>
+                            <p>
+                                Mỗi ngụm mang đến sự pha trộn hài hoà giữa hương vị đậm đà và hương thơm sảng khoái,
+                                khiến đây trở thành lựa chọn lý tưởng cho cả nghi lễ buổi sáng và giờ giải lao buổi
+                                chiều. Trải nghiệm sự ấm áp dễ chịu và những phẩm chất tràn đầy năng lượng đã khiến trà
+                                đen trả thành thức uống cổ điển được yêu thích trong nhiều thế kỷ.
+                            </p>
+                        </div>
+
+                        <!-- thanh tiến trình -->
+                        <div class="benefit-bars">
+                            <!-- top -->
+                            <div>
+                                <div class="flex-1 progressbar-item">
+                                    <h4 class="progressbar-title">Tăng cường năng lượng và tập trung</h4>
+                                </div>
+                                <div class="flex-1 progressbar-item">
+                                    <h4 class="progressbar-title">Giàu chất chống oxy hoá</h4>
+                                </div>
+                            </div>
+
+                            <!-- bottom -->
+                            <div>
+                                <div class="flex-1 progressbar-item">
+                                    <h4 class="progressbar-title">Tăng cường trao đổi chất</h4>
+                                </div>
+                                <div class="flex-1 progressbar-item">
+                                    <h4 class="progressbar-title">Thúc đẩy sự bình tĩnh và thư giãn</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="./assets/products/whitetea1.jpg" alt="best-sellers-product">
+                    </div>
+                </div>
+
+                <!-- sp4 -->
+                <div class="!flex flex-col lg:flex-row items-center justify-between">
+                    <div class="flex-1 best-product--left">
+                        <!-- info -->
+                        <div class="best-product-info">
+                            <h3>Peppermint Velvet</h3>
+                            <p>
+                                Mỗi ngụm mang đến sự pha trộn hài hoà giữa hương vị đậm đà và hương thơm sảng khoái,
+                                khiến đây trở thành lựa chọn lý tưởng cho cả nghi lễ buổi sáng và giờ giải lao buổi
+                                chiều. Trải nghiệm sự ấm áp dễ chịu và những phẩm chất tràn đầy năng lượng đã khiến trà
+                                đen trả thành thức uống cổ điển được yêu thích trong nhiều thế kỷ.
+                            </p>
+                        </div>
+
+                        <!-- thanh tiến trình -->
+                        <div class="benefit-bars">
+                            <!-- top -->
+                            <div>
+                                <div class="flex-1 progressbar-item">
+                                    <h4 class="progressbar-title">Tăng cường năng lượng và tập trung</h4>
+                                </div>
+                                <div class="flex-1 progressbar-item">
+                                    <h4 class="progressbar-title">Giàu chất chống oxy hoá</h4>
+                                </div>
+                            </div>
+
+                            <!-- bottom -->
+                            <div>
+                                <div class="flex-1 progressbar-item">
+                                    <h4 class="progressbar-title">Tăng cường trao đổi chất</h4>
+                                </div>
+                                <div class="flex-1 progressbar-item">
+                                    <h4 class="progressbar-title">Thúc đẩy sự bình tĩnh và thư giãn</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="./assets/products/oolong1.jpg" alt="best-sellers-product">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <section class="h-screen">
 

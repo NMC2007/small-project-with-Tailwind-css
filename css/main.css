@@ -143,4 +143,47 @@
   .activeTab {
     @apply text-p-900;
   }
+
+
+
+  /* feature card */
+  .feature-card {
+    @apply h-[400px] w-[368px] flex flex-col justify-center items-center p-[36px] gap-[36px] [clip-path:polygon(50%_0%,_100%_25%,_100%_75%,_50%_100%,_0%_75%,_0%_25%)] transition-all duration-500 bg-center bg-no-repeat bg-cover;
+  }
+
+  #features h3 {
+    @apply relative z-0 text-xl font-semibold tracking-widest text-white uppercase transition-all duration-500 translate-y-16 group-hover:translate-y-4;
+  }
+
+  #features p {
+    @apply relative z-0 text-center text-white transition-all duration-500 translate-y-full opacity-0 group-hover:opacity-100 group-hover:translate-y-0;
+  }
+
+  .feature-filter {
+    @apply absolute inset-0 transition-all duration-500 opacity-50 bg-p-700 group-hover:bg-p-900 group-hover:opacity-80 -z-10;
+  }
+
+
+  .best-product-info {
+    @apply mt-4 md:mt-9;
+
+    h3 {
+      @apply text-lg font-semibold text-p-900 md:text-2xl;
+    }
+    p {
+      @apply max-w-lg mt-4;
+    }
+  }
+
+  .best-product--left {
+    @apply p-4 lg:pl-0 lg:pr-8;
+  }
+
+  #best-sellers img {
+    @apply max-w-[600px] h-[250px] md:h-[70vh] max-h-[700px] md:rounded-tl-[80px] md:rounded-bl-[80px] object-cover;
+  }
+
+  .slick-dots {
+    bottom: -4rem !important
+  }
 }

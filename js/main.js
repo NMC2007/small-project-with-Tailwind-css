@@ -45,3 +45,13 @@ $(function () {
         animation: "slide"
     });
 })
+
+
+// best sellers
+$(function () {
+    console.log("hello")
+    $(".slider").slick({
+        autoplay: true,
+        dots: true,
+    })
+})
