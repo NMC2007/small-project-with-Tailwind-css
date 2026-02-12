@@ -1,5 +1,22 @@
 import { partnerLogos, productList, partnerLogoBasePath } from "./data.js"
 
+// NAV
+$(function () {
+    $(".navbar").hidescroll();
+
+    // mobile menu
+
+    const toggleBtn = $("#toggle_btn");
+    const dropDownMenu = $(".dropdown-menu");
+
+    toggleBtn.click(() => {
+        dropDownMenu.toggleClass("open");
+    })
+})
+
+
+
+// Partner Logos
 $(function () {
     const container = document.getElementById('partner-logo-list');
 
@@ -12,13 +29,15 @@ $(function () {
     })
 })
 
+
+// Product
 $(function () {
 
     $("li:first").addClass("activeTab");
 
     $("li").on("click", function () {
         $("li").removeClass("activeTab");
-        $("div[id='products-tabs'] ul .r-tabs-state-active").addClass("activeTab")
+        $("div[id='products-tabs'] ul .r-tabs-state-active").addClass("activeTab");
     })
 
 
